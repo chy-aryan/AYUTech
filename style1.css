@@ -1,0 +1,148 @@
+/* Reset and Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Gradient background */
+  color: #333; /* Dark gray text */
+}
+
+/* Header Styling */
+header {
+  background: linear-gradient(to right, #2a7f62, #1f5a44); /* Gradient from green to dark green */
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff; /* White text */
+}
+
+.search-bar {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px; /* Rounded input */
+  outline: none;
+}
+
+/* Main Content Styling */
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Grid Layout for Product Cards */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 25px;
+}
+
+/* Product Card Styling */
+.product-card {
+  background: #fff; /* White background */
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded image corners */
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #2a7f62; /* Green for product titles */
+}
+
+.product-card p {
+  font-size: 14px;
+  margin: 8px 0;
+  color: #7f8c8d; /* Gray for product descriptions */
+}
+
+.product-card .price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e63946; /* Red for price */
+  margin: 10px 0;
+}
+
+/* Buy Now Button Styling */
+.buy-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: linear-gradient(to right, #2a7f62, #1f5a44); /* Gradient from green to dark green */
+  color: #fff; /* White text */
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px; /* Rounded button */
+  transition: background 0.3s ease;
+}
+
+.buy-btn:hover {
+  background: linear-gradient(to right, #1f5a44, #2a7f62); /* Reverse gradient on hover */
+}
+
+/* Consultation Flash Line */
+.consultation-flash {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background: linear-gradient(135deg, #3498db, #2ecc71); /* Gradient from blue to green */
+  color: #fff; /* White text */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-flash p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.consultation-flash a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.consultation-flash a:hover {
+  color: #f1c40f; /* Yellow on hover */
+}

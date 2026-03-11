@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayurvedic Drug Recommendation</title>
+  <link rel="stylesheet" href="style5.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Ayurvedic Drug Recommendation</h1>
+    <form id="ayurvedaForm">
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+      </div>
+      <div class="form-group">
+        <label for="symptoms">Symptoms:</label>
+        <textarea id="symptoms" name="symptoms" placeholder="Describe your symptoms" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="diagnosis">Diagnosis (if any):</label>
+        <input type="text" id="diagnosis" name="diagnosis" placeholder="Enter your diagnosis (optional)">
+      </div>
+      <button type="submit">Get Recommendation</button>
+    </form>
+    <div id="recommendationOutput" class="output"></div>
+  </div>
+  <script src="/prerec.js"></script>
+</body>
+</html>

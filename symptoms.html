@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptoms and Diagnosis</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Health Record</h1>
+        <form id="healthForm">
+            <!-- Symptoms -->
+            <div class="form-group">
+                <label for="symptoms">Symptoms:</label>
+                <textarea id="symptoms" name="symptoms" rows="4" placeholder="Enter patient symptoms..." required></textarea>
+            </div>
+
+            <!-- Diagnosis (Optional) -->
+            <div class="form-group">
+                <label for="diagnosis">Diagnosis (if any):</label>
+                <input type="text" id="diagnosis" name="diagnosis" placeholder="Enter diagnosis...">
+            </div>
+
+            <!-- Prescribed Drug (Optional) -->
+            <div class="form-group">
+                <label for="drug">Prescribed Allopathy Drug (if any):</label>
+                <input type="text" id="drug" name="drug" placeholder="Enter prescribed drug...">
+            </div>
+
+            <!-- Enter Button -->
+            <button type="button" id="enterButton">Enter</button>
+        </form>
+    </div>
+
+    <!-- Flash Line for Consultation -->
+    <div class="consultation-flash">
+        <p>For one-to-one consultation with a doctor, <a href="/doctor.html">click here</a>.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

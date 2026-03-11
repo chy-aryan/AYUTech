@@ -1,0 +1,214 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9; /* Light gray background */
+  color: #333; /* Dark gray text */
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background: linear-gradient(135deg, #3498db, #2ecc71); /* Gradient from blue to green */
+  color: #fff; /* White text */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Grid container for doctor cards */
+.doctor-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+/* Doctor card styling */
+.doctor-card {
+  background: #fff; /* White background */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.doctor-card img {
+  width: 100%;
+  height: auto;
+}
+
+.doctor-info {
+  padding: 20px;
+}
+
+.doctor-info h2 {
+  margin-bottom: 10px;
+  color: #3498db; /* Blue for doctor names */
+}
+
+.doctor-info p {
+  margin-bottom: 10px;
+  font-size: 0.95em;
+  color: #7f8c8d; /* Gray for secondary text */
+}
+
+.doctor-info button {
+  background: #e74c3c; /* Red for buttons */
+  border: none;
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.doctor-info button:hover {
+  background: #c0392b; /* Darker red on hover */
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+  padding: 50px;
+  text-align: center;
+  background: #f9f9f9; /* Light gray background */
+}
+
+.dashboard-container h1 {
+  font-size: 36px;
+  color: #3498db; /* Blue for headings */
+  margin-bottom: 10px;
+}
+
+.dashboard-container p {
+  font-size: 18px;
+  color: #7f8c8d; /* Gray for text */
+  margin-bottom: 40px;
+}
+
+.dashboard-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.dashboard-card {
+  background: #fff; /* White background for cards */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 30%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.dashboard-card h2 {
+  font-size: 24px;
+  color: #3498db; /* Blue for card titles */
+  margin-bottom: 10px;
+}
+
+.dashboard-card p {
+  font-size: 16px;
+  color: #7f8c8d; /* Gray for card text */
+  margin-bottom: 20px;
+}
+
+.dashboard-card .cta-button {
+  background: #e74c3c; /* Red for buttons */
+  color: #fff; /* White text */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dashboard-card .cta-button:hover {
+  background: #c0392b; /* Darker red on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #3498db; /* Blue */
+  }
+  50% {
+    color: #e74c3c; /* Red */
+  }
+  100% {
+    color: #2ecc71; /* Green */
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .doctor-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dashboard-card {
+    width: 100%;
+  }
+}

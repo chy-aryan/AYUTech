@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - AYUTECH</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">AYUTECH</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="login.html" class="cta-button">Logout</a></li>
+    </ul>
+  </nav>
+
+  <!-- Dashboard Content -->
+  <div class="dashboard-container">
+    <h1>Welcome, <span id="username"></span>!</h1>
+    <p>You have successfully logged in.</p>
+
+    <!-- Cards Section -->
+    <div class="dashboard-cards">
+      <div class="dashboard-card">
+        <h2>AI Ayurveda</h2>
+        <p>Get personalized health recommendations.</p>
+        <a href="/prerec.html">
+        <button class="cta-button">Try Now</button>
+    </a>
+      </div>
+      <div class="dashboard-card">
+        <h2>AI Diagnostics</h2>
+        <p>Explore AI driven expert advices.</p>
+        <a href="/dig.html">
+        <button class="cta-button">Explore</button>
+    </a>
+      </div>
+      <div class="dashboard-card">
+        <h2>E-Commerce</h2>
+        <p>Shop for herbal medicines and supplements.</p>
+        <a href="ecom.html">
+        <button class="cta-button">Shop Now</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
